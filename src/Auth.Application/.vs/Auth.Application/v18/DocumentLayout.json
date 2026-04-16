@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F279C814-8924-A5CA-9C5A-9E867A1AAEA1}|Auth.Application.csproj|d:\\github\\authentication-module\\src\\auth.application\\exceptions\\applicationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F279C814-8924-A5CA-9C5A-9E867A1AAEA1}|Auth.Application.csproj|solutionrelative:exceptions\\applicationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F279C814-8924-A5CA-9C5A-9E867A1AAEA1}|Auth.Application.csproj|d:\\github\\authentication-module\\src\\auth.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F279C814-8924-A5CA-9C5A-9E867A1AAEA1}|Auth.Application.csproj|solutionrelative:interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F279C814-8924-A5CA-9C5A-9E867A1AAEA1}|Auth.Application.csproj|d:\\github\\authentication-module\\src\\auth.application\\usecases\\auth\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F279C814-8924-A5CA-9C5A-9E867A1AAEA1}|Auth.Application.csproj|solutionrelative:usecases\\auth\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F279C814-8924-A5CA-9C5A-9E867A1AAEA1}|Auth.Application.csproj|d:\\github\\authentication-module\\src\\auth.application\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F279C814-8924-A5CA-9C5A-9E867A1AAEA1}|Auth.Application.csproj|solutionrelative:dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationException.cs",
+              "DocumentMoniker": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\Exceptions\\ApplicationException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\ApplicationException.cs",
+              "ToolTip": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\Exceptions\\ApplicationException.cs",
+              "RelativeToolTip": "Exceptions\\ApplicationException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:28:27.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:26:30.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginHandler.cs",
+              "DocumentMoniker": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\UseCases\\Auth\\LoginHandler.cs",
+              "RelativeDocumentMoniker": "UseCases\\Auth\\LoginHandler.cs",
+              "ToolTip": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\UseCases\\Auth\\LoginHandler.cs",
+              "RelativeToolTip": "UseCases\\Auth\\LoginHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:24:46.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\DTOs\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginRequest.cs",
+              "ToolTip": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\DTOs\\LoginRequest.cs",
+              "RelativeToolTip": "DTOs\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T14:38:12.484Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

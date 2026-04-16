@@ -1,0 +1,69 @@
+# Build folders
+bin/
+obj/
+out/
+
+# Visual Studio files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+.history/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Dotnet tools
+*.deps.json
+*.runtimeconfig.json
+
+# EF Core Migrations (optional)
+# Uncomment if you want to exclude migrations until v0.4.0
+# **/Migrations/
+
+# Secrets
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+
+# Publish output
+publish/
+dist/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+
+# Diagrams cache
+docs/diagrams/.cache/
+docs/diagrams/*.svg
+
+# JetBrains cache
+_ReSharper.Caches/
+
+# Node (if used for docs or tooling)
+node_modules/
+
+# Python virtual envs (if used for tooling)
+venv/

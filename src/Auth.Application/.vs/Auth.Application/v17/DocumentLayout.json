@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F279C814-8924-A5CA-9C5A-9E867A1AAEA1}|Auth.Application.csproj|d:\\github\\authentication-module\\src\\auth.application\\exceptions\\applicationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F279C814-8924-A5CA-9C5A-9E867A1AAEA1}|Auth.Application.csproj|solutionrelative:exceptions\\applicationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F279C814-8924-A5CA-9C5A-9E867A1AAEA1}|Auth.Application.csproj|d:\\github\\authentication-module\\src\\auth.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F279C814-8924-A5CA-9C5A-9E867A1AAEA1}|Auth.Application.csproj|solutionrelative:interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationException.cs",
+              "DocumentMoniker": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\Exceptions\\ApplicationException.cs",
+              "RelativeDocumentMoniker": "Exceptions\\ApplicationException.cs",
+              "ToolTip": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\Exceptions\\ApplicationException.cs",
+              "RelativeToolTip": "Exceptions\\ApplicationException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T16:08:04.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\GitHub\\authentication-module\\src\\Auth.Application\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T16:07:41.799Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
