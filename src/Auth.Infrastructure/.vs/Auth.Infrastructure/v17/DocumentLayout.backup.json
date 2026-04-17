@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\authentication-module\\src\\Auth.Infrastructure\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F117F64D-27BE-3AD7-01D8-168AA94DDC19}|Auth.Infrastructure.csproj|d:\\github\\authentication-module\\src\\auth.infrastructure\\persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F117F64D-27BE-3AD7-01D8-168AA94DDC19}|Auth.Infrastructure.csproj|solutionrelative:persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F117F64D-27BE-3AD7-01D8-168AA94DDC19}|Auth.Infrastructure.csproj|d:\\github\\authentication-module\\src\\auth.infrastructure\\security\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F117F64D-27BE-3AD7-01D8-168AA94DDC19}|Auth.Infrastructure.csproj|solutionrelative:security\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F117F64D-27BE-3AD7-01D8-168AA94DDC19}|Auth.Infrastructure.csproj|d:\\github\\authentication-module\\src\\auth.infrastructure\\persistence\\context\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F117F64D-27BE-3AD7-01D8-168AA94DDC19}|Auth.Infrastructure.csproj|solutionrelative:persistence\\context\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F117F64D-27BE-3AD7-01D8-168AA94DDC19}|Auth.Infrastructure.csproj|d:\\github\\authentication-module\\src\\auth.infrastructure\\security\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F117F64D-27BE-3AD7-01D8-168AA94DDC19}|Auth.Infrastructure.csproj|solutionrelative:security\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\GitHub\\authentication-module\\src\\Auth.Infrastructure\\Persistence\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Persistence\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\GitHub\\authentication-module\\src\\Auth.Infrastructure\\Persistence\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Persistence\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:44:30.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthDbContext.cs",
+              "DocumentMoniker": "D:\\GitHub\\authentication-module\\src\\Auth.Infrastructure\\Persistence\\Context\\AuthDbContext.cs",
+              "RelativeDocumentMoniker": "Persistence\\Context\\AuthDbContext.cs",
+              "ToolTip": "D:\\GitHub\\authentication-module\\src\\Auth.Infrastructure\\Persistence\\Context\\AuthDbContext.cs",
+              "RelativeToolTip": "Persistence\\Context\\AuthDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:39:09.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "D:\\GitHub\\authentication-module\\src\\Auth.Infrastructure\\Security\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "Security\\PasswordHasher.cs",
+              "ToolTip": "D:\\GitHub\\authentication-module\\src\\Auth.Infrastructure\\Security\\PasswordHasher.cs",
+              "RelativeToolTip": "Security\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:37:52.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\GitHub\\authentication-module\\src\\Auth.Infrastructure\\Security\\TokenService.cs",
+              "RelativeDocumentMoniker": "Security\\TokenService.cs",
+              "ToolTip": "D:\\GitHub\\authentication-module\\src\\Auth.Infrastructure\\Security\\TokenService.cs",
+              "RelativeToolTip": "Security\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:37:32.027Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

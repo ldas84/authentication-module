@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="-MEpqyjVvctacZ6DXKnp">
+    <mxGraphModel dx="1821" dy="987" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="O2Jn7rMFAEDtCF6XtzpP-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Client&lt;div&gt;Browser / Mobile App&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="350" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="O2Jn7rMFAEDtCF6XtzpP-8" edge="1" parent="1" source="O2Jn7rMFAEDtCF6XtzpP-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="O2Jn7rMFAEDtCF6XtzpP-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2Jn7rMFAEDtCF6XtzpP-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="API Gateway / Reverse Proxy&lt;div&gt;(Nginx / Traefik / APIM)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="330" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="O2Jn7rMFAEDtCF6XtzpP-10" edge="1" parent="1" source="O2Jn7rMFAEDtCF6XtzpP-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="O2Jn7rMFAEDtCF6XtzpP-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2Jn7rMFAEDtCF6XtzpP-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Auth.Application&lt;div&gt;Use Cases / Handlers&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="360" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="O2Jn7rMFAEDtCF6XtzpP-9" edge="1" parent="1" source="O2Jn7rMFAEDtCF6XtzpP-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="O2Jn7rMFAEDtCF6XtzpP-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2Jn7rMFAEDtCF6XtzpP-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Auth.Api&lt;div&gt;ASP.Net Core Controllers&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="180" x="340" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="O2Jn7rMFAEDtCF6XtzpP-11" edge="1" parent="1" source="O2Jn7rMFAEDtCF6XtzpP-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="O2Jn7rMFAEDtCF6XtzpP-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2Jn7rMFAEDtCF6XtzpP-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Auth.Domain&lt;div&gt;Entities / Value Objects&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="360" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="O2Jn7rMFAEDtCF6XtzpP-12" edge="1" parent="1" source="O2Jn7rMFAEDtCF6XtzpP-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="O2Jn7rMFAEDtCF6XtzpP-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2Jn7rMFAEDtCF6XtzpP-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Auth.Infrastructure&lt;div&gt;Repositories / TokenService&lt;/div&gt;&lt;div&gt;PasswordHasher / DbContext&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="180" x="340" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="O2Jn7rMFAEDtCF6XtzpP-13" edge="1" parent="1" source="O2Jn7rMFAEDtCF6XtzpP-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="O2Jn7rMFAEDtCF6XtzpP-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O2Jn7rMFAEDtCF6XtzpP-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Database&lt;div&gt;Users / Roles / Tokens&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="350" y="700" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

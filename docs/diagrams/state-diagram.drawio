@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="V8jCt4AkLPpjluvkPnGm">
+    <mxGraphModel dx="1821" dy="987" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Created" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-7" edge="1" parent="1" source="QOPNhxz3DtTsTaY-if6e-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QOPNhxz3DtTsTaY-if6e-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-12" connectable="0" parent="QOPNhxz3DtTsTaY-if6e-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Token stored in DB" vertex="1">
+          <mxGeometry relative="1" x="0.0929" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-9" edge="1" parent="1" source="QOPNhxz3DtTsTaY-if6e-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="QOPNhxz3DtTsTaY-if6e-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-15" connectable="0" parent="QOPNhxz3DtTsTaY-if6e-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Token used" vertex="1">
+          <mxGeometry relative="1" x="0.4688" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-10" edge="1" parent="1" source="QOPNhxz3DtTsTaY-if6e-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="QOPNhxz3DtTsTaY-if6e-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-16" connectable="0" parent="QOPNhxz3DtTsTaY-if6e-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Token expired" vertex="1">
+          <mxGeometry relative="1" x="-0.1962" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-11" edge="1" parent="1" source="QOPNhxz3DtTsTaY-if6e-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="QOPNhxz3DtTsTaY-if6e-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-17" connectable="0" parent="QOPNhxz3DtTsTaY-if6e-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Token revoked" vertex="1">
+          <mxGeometry relative="1" x="0.4005" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Active" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-13" edge="1" parent="1" source="QOPNhxz3DtTsTaY-if6e-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="QOPNhxz3DtTsTaY-if6e-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-14" connectable="0" parent="QOPNhxz3DtTsTaY-if6e-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Rotation generates new token" vertex="1">
+          <mxGeometry relative="1" x="0.0381" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Used" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Expired" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Revoked" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="QOPNhxz3DtTsTaY-if6e-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Replaced" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="570" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
