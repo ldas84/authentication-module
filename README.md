@@ -1,4 +1,10 @@
-Authentication Module — Clean Architecture Implementation
+# Authentication Module — Clean Architecture (.NET 8)
+
+![Version](https://img.shields.io/badge/version-v0.1.1-blue)
+![Architecture](https://img.shields.io/badge/architecture-Clean%20Architecture-brightgreen)
+![DotNet](https://img.shields.io/badge/.NET-8.0-purple)
+![Status](https://img.shields.io/badge/docs-available-success)
+
 A modular, extensible, and production‑ready Authentication Module built using .NET, following Clean Architecture, Domain‑Driven Design (DDD) principles, and industry‑standard security practices.
 This module is designed to serve as a standalone authentication core for larger systems or as a reusable component across multiple backend services.
 
