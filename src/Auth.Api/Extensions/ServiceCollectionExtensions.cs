@@ -3,6 +3,8 @@ using Auth.Application.UseCases.RegisterUser;
 using Auth.Domain.Interfaces;
 using Auth.Infrastructure.Persistence.Repositories;
 using Auth.Infrastructure.Services;
+using Auth.Infrastructure.Identity;
+using Auth.Application.Abstractions;
 
 namespace Auth.Api.Extensions;
 
@@ -13,6 +15,7 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<RegisterUserHandler>();
+        services.AddScoped<IUserIdentityService, UserIdentityService>();
 
         return services;
     }
