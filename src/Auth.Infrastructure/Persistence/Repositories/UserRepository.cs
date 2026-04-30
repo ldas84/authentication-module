@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Auth.Domain.Entities;
 using Auth.Domain.Interfaces;
-using Auth.Infrastructure.Persistence.Context;
+using Auth.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 namespace Auth.Infrastructure.Persistence.Repositories;

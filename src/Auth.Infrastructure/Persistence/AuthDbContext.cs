@@ -4,7 +4,7 @@ using System.Text;
 using Auth.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Auth.Infrastructure.Persistence.Context
+namespace Auth.Infrastructure.Persistence
 {
     public class AuthDbContext : DbContext
     {
