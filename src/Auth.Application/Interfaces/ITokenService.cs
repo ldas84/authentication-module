@@ -4,11 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Auth.Domain.Interfaces
+namespace Auth.Application.Interfaces
 {
     public interface ITokenService
     {
-        string GenerateAccessToken(User user);
+        string GenerateAccessToken(string email, IEnumerable<string> roles);
         RefreshToken GenerateRefreshToken();
     }
 }

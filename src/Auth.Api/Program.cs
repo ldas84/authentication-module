@@ -1,41 +1,65 @@
+using Auth.Application;
+using Auth.Application.Interfaces;
+using Auth.Infrastructure.Security;
+using Auth.Domain.Interfaces;
+using Auth.Infrastructure.Persistence;
+using Auth.Infrastructure.Persistence.Repositories;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+// Token Service
+builder.Services.AddSingleton<ITokenService>(sp =>
+{
+    var config = sp.GetRequiredService<IConfiguration>();
+    return new TokenService(
+        config["Jwt:Key"]!,
+        config["Jwt:Issuer"]!,
+        config["Jwt:Audience"]!,
+        int.Parse(config["Jwt:ExpirationMinutes"] ?? "60")
+    );
+});
+
+// HttpClient to AuthZ
+builder.Services.AddHttpClient("AuthZ", client =>
+{
+    client.BaseAddress = new Uri("http://localhost:5145");
+});
+
+// Password hasher
+builder.Services.AddScoped<IPasswordHasher, BCryptPasswordHasher>();
+
+// Repositories
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+// MediatR
+builder.Services.AddMediatR(cfg =>
+    cfg.RegisterServicesFromAssembly(typeof(Auth.Application.AssemblyReference).Assembly));
+
+// DbContext
+builder.Services.AddDbContext<AuthDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AuthConnection"));
+});
+
+// Classic Swagger 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// Controllers
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Swagger UI
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+app.MapControllers();
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
