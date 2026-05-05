@@ -1,3 +1,5 @@
+using MediatR;
+
 namespace Auth.Application.DTOs;
 
 public class RegisterUserDto

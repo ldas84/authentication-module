@@ -24,4 +24,11 @@ public class UserRoleRepository : IUserRoleRepository
         await _context.UserRoles.AddAsync(userRole);
         await _context.SaveChangesAsync();
     }
+
+    public async Task<List<UserRole>> GetAllByUserIdAsync(Guid userId)
+    {
+        return await _context.UserRoles
+            .Where(ur => ur.UserId == userId)
+            .ToListAsync();
+    }
 }
