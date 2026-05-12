@@ -10,7 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="14.1.0" />
+    <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.7" />
     <PackageReference Include="Microsoft.IdentityModel.Logging" Version="8.18.0" />
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.18.0" />
@@ -21,6 +22,9 @@
     <AssemblyName>Auth.Application</AssemblyName>     
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
 </Project>

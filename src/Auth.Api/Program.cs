@@ -5,8 +5,11 @@ using Auth.Domain.Interfaces;
 using Auth.Infrastructure.Persistence;
 using Auth.Infrastructure.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
+using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
+Console.WriteLine(">>> CADENA DE CONEXIÓN LEÍDA POR AUTH.API:");
+Console.WriteLine(builder.Configuration.GetConnectionString("AuthConnection"));
 
 // Token Service
 builder.Services.AddSingleton<ITokenService>(sp =>
@@ -33,13 +36,12 @@ builder.Services.AddScoped<IPasswordHasher, BCryptPasswordHasher>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 // MediatR
-builder.Services.AddMediatR(cfg =>
-    cfg.RegisterServicesFromAssembly(typeof(Auth.Application.AssemblyReference).Assembly));
+builder.Services.AddMediatR(typeof(Auth.Application.AssemblyReference).Assembly);
 
 // DbContext
 builder.Services.AddDbContext<AuthDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("AuthConnection"));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("AuthConnection"));
 });
 
 // Classic Swagger 
@@ -58,7 +60,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.MapControllers();
 

@@ -4,7 +4,7 @@ namespace Auth.Application.DTOs;
 
 public class LoginUserResponse
 {
-    public string Token{ get; set; }
-    public IEnumerable<string> Roles { get; set; }
-    public string Email { get; set; }
+    public required string Token{ get; set; }
+    public required IEnumerable<string> Roles { get; set; }
+    public required string Email { get; set; }
 }

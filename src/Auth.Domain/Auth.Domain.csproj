@@ -4,6 +4,9 @@
     <AssemblyName>Auth.Domain</AssemblyName>    
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,3 +14,4 @@
   </ItemGroup>
 
 </Project>
+

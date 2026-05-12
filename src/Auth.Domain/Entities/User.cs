@@ -11,6 +11,7 @@ namespace Auth.Domain.Entities
         public string PasswordHash { get; set; } = default!;
         public bool IsActive { get; set; } = default!;
         public List<Role> Roles { get; set; } = new();
-
+        public DateTime CreatedAt { get; set; } = default!;
+        public DateTime UpdatedAt { get; set; }
     }
 }
