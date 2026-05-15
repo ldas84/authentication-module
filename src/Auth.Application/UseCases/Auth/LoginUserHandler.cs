@@ -6,6 +6,7 @@ using Auth.Application.Interfaces;
 using System.Net.Http.Json;
 using System.Net.Http;
 using MediatR;
+using System.Reflection.Metadata;
 
 namespace Auth.Application.UseCases.Auth;
 
@@ -49,28 +50,30 @@ public class LoginUserHandler : IRequestHandler<LoginUserRequest, LoginUserRespo
         }
 
         // 3. Llamar AuthZ para obtener roles
-        var client = _httpClientFactory.CreateClient("AuthZ");
+        //Reemplaza temporalmente el llamado a AuthZ
+        var roles = new List<string> { "admin" };        
+        //var client = _httpClientFactory.CreateClient("AuthZ");
 
         HttpResponseMessage response;
-        try
+        /*try
         {
             response = await client.GetAsync($"/api/roles/user/{user.Id}");
         }
         catch (Exception ex)
         {
             _logger.LogError(ex, "Error occurred while communicate with AuthZ");
-            throw new Exception("Internal error validating user roles.");
-        }
+            throw new Exception("Internal error validating user roles: " + ex.Message);
+        }*/
 
-        if (!response.IsSuccessStatusCode)
+        /*if (!response.IsSuccessStatusCode)
         {
             _logger.LogWarning("AuthZ returned error for user {Email}", request.Email);
             throw new Exception("User roles couldn't be gotten.");
         }
 
-        var roles = await response.Content.ReadFromJsonAsync<List<string>>() 
+        roles = await response.Content.ReadFromJsonAsync<List<string>>() 
                     ?? new List<string>();
-
+        */
         // 4. Generar token
         var token = _tokenService.GenerateAccessToken(user.Email, roles);
 
@@ -82,4 +85,5 @@ public class LoginUserHandler : IRequestHandler<LoginUserRequest, LoginUserRespo
             Email = user.Email
         };
     }
+    
 }

@@ -1,6 +1,7 @@
 ﻿using Auth.Application.DTOs;
 using Auth.Application.UseCases.RegisterUser;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using MediatR;
 using System.Reflection.Metadata.Ecma335;
 using System.Net;
@@ -66,6 +67,20 @@ public class AuthController : ControllerBase
 
             return StatusCode(500, new { message = "Internal server error." });
         }
+    }
+
+    [Authorize]
+    [HttpGet("protected")]
+    public IActionResult ProtectedEndpoint()
+    {
+        return Ok(new { message = "Authorized Access", user = User.Identity?.Name });
+    }
+
+    [Authorize(Roles = "admin")]
+    [HttpGet("admin-only")]
+    public IActionResult AdminOnly()
+    {
+        return Ok(new { message = "This section is admin access required" });
     }
 }
 

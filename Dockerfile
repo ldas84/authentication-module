@@ -15,7 +15,10 @@ RUN cat Auth.Api/Auth.Api.csproj
 
 RUN dotnet restore ./Auth.Api/Auth.Api.csproj
 
-COPY ./src/ .
+COPY ./src/Auth.Api ./Auth.Api
+COPY ./src/Auth.Application ./Auth.Application
+COPY ./src/Auth.Infrastructure ./Auth.Infrastructure
+COPY ./src/Auth.Domain ./Auth.Domain
 
 RUN dotnet publish ./Auth.Api/Auth.Api.csproj -c Release -o /app/publish
 
